@@ -7,6 +7,10 @@ function App() {
       <h1>hola mundo</h1>
       <h2>prueba</h2>
       <h3>prueba 2</h3>
+      <h3>prueba 2</h3>
+
+      <h3>prueba 2</h3>
+
     </div>
   );
 }
