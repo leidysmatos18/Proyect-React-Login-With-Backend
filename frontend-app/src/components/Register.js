@@ -104,8 +104,17 @@ const Register = () => {
               className='form-control'
               placeholder='Confirm Password'
             />
+            <input
+             type="checkbox"
+             name="acceptTerms"
+            //  value={state.verifyPassword}
+             onChange={onChange}
+             className='form-control'
+            />
+            <label for="acceptTerms">I agree with <a href="url">term of services</a></label>
           </div>
           <button type='submit' className='btn btn-primary'>Register</button>
+          <p>Already a member? <a href="url">Login here</a></p>
         </form>
       </div>
     </>
