@@ -1,20 +1,21 @@
-import axios from 'axios';
 import React, { useState } from 'react';
+import axios from 'axios';
 
-const URI = 'http://localhost:8000/login/'
 
-const userContent = {
+const URI = 'http://localhost:8000/register/'
+
+const userRegister = {
+  fullName: "",
   user: "",
-  password: ""
+  email: "",
+  password: "",
+  verifyPassword: ""
 }
 
-const Login = () => {
-  const [state, setState] = useState(userContent);
-  // const [files, setFiles] = useState([]);
+const Register = () => {
+  const [state, setState] = useState(userRegister);
 
   const onChange = e => {
-    //console.log(e.target.files);
-    // setFiles(e.target.files)
     const value = e.target.value;
     setState({
       ...state,
@@ -24,24 +25,16 @@ const Login = () => {
 
 
   // const navigate = useNavigate()    
-  //procedimiento guardar
   const store = async (e) => {
     e.preventDefault()
 
-    const userData = {
-      user: state.user,
-      password: state.password
-    };
-
-
     const formData = new FormData();
 
+    formData.append('fullName', state.fullName);
     formData.append('user', state.user);
+    formData.append('email', state.email);
     formData.append('password', state.password);
-
-    // Object.values(files).forEach(file => {
-    //   formData.append("files", file);
-    // });
+    formData.append('verifypassword', state.verifyPassword);
 
     try {
       const res = await axios.post(URI, formData, {
@@ -68,17 +61,32 @@ const Login = () => {
   return (
     <>
       <div className='col-md-6'>
-        <h3>LOGIN</h3>
+        <h3>Sing Up</h3>
         <form onSubmit={store}>
           <div className='mb-3'>
-            {/* <label className='form-label'>Titulo</label> */}
+            <input
+              type="text"
+              name="fullName"
+              value={state.fullName}
+              onChange={onChange}
+              className='form-control'
+              placeholder='Full Name'
+            />
             <input
               type="text"
               name="user"
               value={state.user}
               onChange={onChange}
               className='form-control'
-              placeholder='User'
+              placeholder='Username'
+            />
+              <input
+              type="email"
+              name="email"
+              value={state.email}
+              onChange={onChange}
+              className='form-control'
+              placeholder='Email'
             />
             <input
               type="password"
@@ -86,33 +94,22 @@ const Login = () => {
               value={state.password}
               onChange={onChange}
               className='form-control'
-              placeholder='PassWord'
+              placeholder='Password'
             />
-          </div>
-          {/* <div className='mb-3'>
             <input
-              type='file'
-              id='file'
-              name="files"
-              multiple
-              onChange={onChange}
-            />
-          </div> */}
-          {/* <div className='mb-3'>
-            <label className='form-label'>Contenido</label>
-            <textarea
-              type="text"
-              name="content"
-              value={state.content}
+              type="password"
+              name="verifyPassword"
+              value={state.verifyPassword}
               onChange={onChange}
               className='form-control'
+              placeholder='Confirm Password'
             />
-          </div> */}
-          <button type='submit' value='Upload' className='btn btn-primary'>Login In</button>
+          </div>
+          <button type='submit' className='btn btn-primary'>Register</button>
         </form>
       </div>
     </>
   )
 }
 
-export default Login
+export default Register

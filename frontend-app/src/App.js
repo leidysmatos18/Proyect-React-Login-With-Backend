@@ -1,12 +1,11 @@
-import './App.css';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <h1>hello</h1>
+      {/* <Login/> */}
+      <Register/>
     </div>
   );
 }
