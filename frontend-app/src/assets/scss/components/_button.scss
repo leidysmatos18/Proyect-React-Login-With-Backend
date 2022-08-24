@@ -1,0 +1,86 @@
+// Title
+
+.title-component {
+  background-color: $blue;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+// font-family: 'Roboto Bold';
+color: $white;
+margin: 0px !important;
+border-top-right-radius: 2px;
+border-top-left-radius: 2px;
+position: relative;
+.title-component-right {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  top: 8px;
+}
+}
+
+.page-title {
+
+  a {
+    margin-right: 15px;
+    @media (max-width: 767px) { 
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 767px) {
+      top: 0;
+    }
+
+    @media (max-width: 460px) {
+      top: 6px;
+    }
+    img {
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    position: fixed;
+    top: 1.5rem;
+    color: $black;
+    right: 10%;
+    padding: 0 30px;
+    width: 30%;
+  }
+  @media (max-width: 767px) { 
+    position: fixed;
+    left: calc(100% - 240px);
+    top: 18px;
+    color: #222d32;
+    right: 4%;
+    padding: 0 30px;
+    width: 32%;
+    font-size: 0.9rem;
+    text-align: left;  
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 767px) {
+    top: 25px;
+  }
+
+  @media (max-width: 430px) {
+    width: 35%;
+    left: calc(100% - 170px);
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 320px) {
+    left: calc(100% - 145px);
+    font-size: 0.6rem;
+  }
+
+  position: fixed;
+  top:  26px;
+  left: 18rem;
+  color: $black;
+}
+

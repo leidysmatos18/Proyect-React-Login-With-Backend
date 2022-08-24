@@ -60,7 +60,8 @@ const Register = () => {
 
   return (
     <>
-      <div className='col-md-6'>
+      <div className='main-form-user'>
+      <div className='form-register'>
         <h3>Sing Up</h3>
         <form onSubmit={store}>
           <div className='mb-3'>
@@ -107,6 +108,7 @@ const Register = () => {
           </div>
           <button type='submit' className='btn btn-primary'>Register</button>
         </form>
+      </div>
       </div>
     </>
   )

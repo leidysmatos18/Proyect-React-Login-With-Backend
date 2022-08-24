@@ -1,0 +1,36 @@
+.dark-theme {
+  --clr-bcg: #282c35;
+  --clr-green: #56fd00;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+  --clr-light-b: 0 0 10px 0px #fff !important;
+}
+
+.light-theme {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-dark-b: 0 0 10px 0px #000 !important;
+}
+
+main {
+  background: var(--clr-bcg);
+  color: var(--clr-font);
+  transition: all 0.3s linear;
+  .blog-box {
+   background: var(--clr-bcg) !important;
+  color: var(--clr-font);
+      box-shadow: 0 0 10px 0px #000000 !important;
+  }
+
+}
+
+.navbar {
+  background-color: #59899b;
+}
+
+footer {
+  position: absolute;
+    width: 100%;
+    padding: 25px 0;
+}

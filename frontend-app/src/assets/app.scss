@@ -1,0 +1,18 @@
+// Plugins
+
+// Archivo Principal
+@import "scss/base/variables";
+@import "scss/base/fonts";
+@import "scss/base/mixins";
+@import "scss/base/base";
+@import "scss/base/menu";
+
+// Components
+@import "scss/components/button";
+@import "scss/components/input";
+@import "scss/components/login";
+
+
+// Screens
+@import "scss/screens/home";
+

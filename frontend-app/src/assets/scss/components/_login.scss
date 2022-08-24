@@ -1,0 +1,43 @@
+// Login
+
+.main-form-user {
+  width: fit-content;
+  margin: auto;
+  display: block;
+  background: #ffc5c5;
+  padding: 3rem;
+  height: auto;
+  border-radius: 0.9rem;
+  text-align: center;
+  .form-register {
+    h3 {
+      color: #fff;
+      font-family: sans-serif;
+    }
+    form {
+      input {
+        display: block;
+        margin: 0.8rem auto;
+        border: none;
+        height: 1.5rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+      }
+      button {
+        cursor: pointer;
+        border: solid 1px #fff;
+        background-color: #ff8787;
+        padding: 0.3rem 0.8rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        font-family: sans-serif;
+        &:hover {
+          background-color: #fff;
+          color: #ff8787;
+        }
+      }
+    }
+  }
+
+}
+
