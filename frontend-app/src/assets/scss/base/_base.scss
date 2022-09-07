@@ -13,24 +13,23 @@
   --clr-dark-b: 0 0 10px 0px #000 !important;
 }
 
-main {
-  background: var(--clr-bcg);
-  color: var(--clr-font);
-  transition: all 0.3s linear;
-  .blog-box {
-   background: var(--clr-bcg) !important;
-  color: var(--clr-font);
-      box-shadow: 0 0 10px 0px #000000 !important;
-  }
+// main {
+//   background: var(--clr-bcg);
+//   color: var(--clr-font);
+//   transition: all 0.3s linear;
+//   .blog-box {
+//    background: var(--clr-bcg) !important;
+//   color: var(--clr-font);
+//       box-shadow: 0 0 10px 0px #000000 !important;
+//   }
+// }
 
-}
+// .navbar {
+//   background-color: #59899b;
+// }
 
-.navbar {
-  background-color: #59899b;
-}
-
-footer {
-  position: absolute;
-    width: 100%;
-    padding: 25px 0;
-}
+// footer {
+//   position: absolute;
+//     width: 100%;
+//     padding: 25px 0;
+// }

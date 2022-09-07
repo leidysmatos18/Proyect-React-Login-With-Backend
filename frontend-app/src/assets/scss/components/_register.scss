@@ -1,0 +1,67 @@
+// Register
+  .main-form-user {
+    background-color: #B721FF;
+    width: 400px;
+    padding: 3rem 1rem;
+    // border-radius: 0.9rem;
+    text-align: center;
+    color: white;
+
+    .form-register {
+       font-family: sans-serif;
+       h3 {
+        font-size: 2rem;
+       }
+
+      form {
+        input:not(input[type="checkbox"]) {
+          display: block;
+          margin: 0.8rem auto;
+          border: none;
+          height: 1.5rem;
+          padding: 0.5rem;
+          width: 85%;
+  
+        }
+
+        input[type="checkbox"]{
+          width: 1rem;
+          height: 1rem;
+          margin-right: 1rem;
+          margin-left: -8rem;
+          text-align: left;
+          cursor: pointer;
+          background-color: #fff;
+        }
+
+        #text-term {
+          font-size: .90rem;
+        }
+
+        a{
+          text-decoration: none;
+          color:#631672;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        button {
+          margin-top: 1rem;
+          border: solid 1px white;
+          background-color: #631672;
+          padding: .80rem 0.8rem;
+          border-radius: 0.5rem;
+          color: #fff;
+          width: 85%;
+          font-size: 1.3rem;     
+          font-weight: bold;    
+          &:hover {
+            background-color: #B721FF; 
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+
+

@@ -9,3 +9,17 @@
   --bg-right: cyan;
   --bg-main: lemonchiffon;
 }
+
+.navbar {
+  height: 6.25rem;
+  .collapse {
+
+   .navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+   }
+  }
+
+
+}
